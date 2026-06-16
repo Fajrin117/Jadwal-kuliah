@@ -1,35 +1,42 @@
+<?php
+$title = "Login";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Background Color Dinamis PHP</title>
+    <title><?php echo $title; ?></title>
 </head>
+<body>
 
-<?php
-$warna = "white";
+<form action="process.php" method="post">
+    <table align="center" border="1">
+        <caption>Silahkan Login Terlebih Dahulu</caption>
 
-if(isset($_POST['ubah'])){
-    $warna = $_POST['warna'];
-}
-?>
+        <tr>
+            <td><label for="username">Username</label></td>
+            <td>
+                <input type="text" placeholder="Masukkan Username"
+                       id="username" name="username">
+            </td>
+        </tr>
 
-<body style="background-color: <?php echo $warna; ?>;">
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+                <input type="password" placeholder="Masukkan Password"
+                       id="password" name="password">
+            </td>
+        </tr>
 
-    <h2>Mengubah Background Color Dinamis Dengan PHP</h2>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" name="login" value="Login">
+            </td>
+        </tr>
 
-    <form method="POST">
-        <label>Pilih Warna:</label>
-
-        <select name="warna">
-            <option value="white">Putih</option>
-            <option value="red">Merah</option>
-            <option value="blue">Biru</option>
-            <option value="green">Hijau</option>
-            <option value="yellow">Kuning</option>
-            <option value="pink">Pink</option>
-        </select>
-
-        <input type="submit" name="ubah" value="Ubah Warna">
-    </form>
+    </table>
+</form>
 
 </body>
 </html>
