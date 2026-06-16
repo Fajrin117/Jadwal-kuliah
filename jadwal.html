@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jadwal Kuliah</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        .kuliah{
+            background-color: #27d8d8;
+        }
+        .istirahat{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption><b>Jadwal Kuliah</b></caption>
+
+    <tr>
+        <th rowspan="2">Jam</th>
+        <th colspan="6">Hari</th>
+    </tr>
+
+    <tr>
+        <th>Senin</th>
+        <th>Selasa</th>
+        <th>Rabu</th>
+        <th>Kamis</th>
+        <th>Jum'at</th>
+        <th>Sabtu</th>
+    </tr>
+
+    <tr>
+        <td>07:00-08:00</td>
+        <td rowspan="2" class="kuliah">Praktikum Web</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="4"></td>
+        <td rowspan="4"></td>
+    </tr>
+
+    <tr>
+        <td>08:00-09:00</td>
+        <td rowspan="2" class="kuliah">Praktikum Java</td>
+        <td rowspan="3" class="kuliah">Java Lanjut</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>09:00-10:00</td>
+        <td></td>
+        <td rowspan="2" class="kuliah">Praktikum Jaringan</td>
+    </tr>
+
+    <tr>
+        <td>10:00-11:20</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr class="istirahat">
+        <td>11:20-13:00</td>
+        <td colspan="6" align="left">Ishoma</td>
+    </tr>
+
+    <tr>
+        <td>13:00-14:00</td>
+        <td rowspan="2" class="kuliah">Web</td>
+        <td></td>
+        <td></td>
+        <td rowspan="2" class="kuliah">Jaringan</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>14:00-15:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
